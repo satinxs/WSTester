@@ -1,0 +1,45 @@
+body {
+    padding: 1em;
+}
+
+.container {
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+}
+
+.card {
+    padding: 0.5em;
+}
+
+.listview {
+    overflow-y: scroll;
+    height: 60%;
+    margin-bottom: 0.5em;
+}
+
+.loading {
+    position: relative;
+}
+
+.loading:after {
+    left: 40%;
+    position: absolute;
+    content: "";
+    animation: loading-animation 1s linear infinite;
+    height: 1.2em;
+    width: 1.2em;
+    border: 3px dashed whitesmoke;
+    border-radius: 50%;
+    z-index: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loading-animation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

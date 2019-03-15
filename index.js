@@ -1,6 +1,6 @@
 import m from 'mithril'
 
-import 'picnic'
+// import 'picnic'
 import './src/style.css'
 
 import model from './src/model';
